@@ -87,7 +87,7 @@ const FromInput = styled.input`
 const Stella = styled.img`
   position: absolute;
   width: 45vw;
-  bottom: 0.9vh;
+  bottom: 10vh;
   z-index: 2;
 `;
 const BackBtn = styled.p`
@@ -201,7 +201,7 @@ const Write = () => {
           </Form>
         </div>
         <br />
-        <Stella alt="stella" src="img/sj2.png" />
+        <Stella alt="stella" src="img/final.png" />
       </center>
     </Background>
   );

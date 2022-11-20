@@ -64,7 +64,7 @@ const Copyright = styled.p`
 const Stella = styled.img`
   position: relative;
   width: 60vw;
-  top: 47vh;
+  top: 40vh;
 `;
 
 const WriteText = styled.p`
@@ -80,8 +80,8 @@ const WriteText = styled.p`
 
   background-color: rgb(103, 150, 186);
   margin: 0;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 
   z-index: 2;
 
@@ -124,15 +124,15 @@ const Chocojams = () => {
       <Container>
         <center>
           <Wrapper>
-            <Dday>D - {dDay} </Dday>
+            <Dday>D - {dDay > 0 ? dDay : "DAY"} </Dday>
             <TitleText>2022 스장 데이</TitleText>
 
             <Count>쌓인 편지 수 : {num}</Count>
             <Copyright>문의사항 @little__tomato_</Copyright>
           </Wrapper>
-          <Link to="/write">
-            <WriteText>생일 축하 편지 쓰기</WriteText>
-          </Link>
+          {/* <Link to="/write"> */}
+          <WriteText>편지 배달 중 ...</WriteText>
+          {/* </Link> */}
           <Stella alt="stellajang" src="img/sj1.png" />
         </center>
       </Container>
